@@ -36,31 +36,31 @@ class FollowusonWidget extends WP_Widget
   <label for="<?php echo $this->get_field_id('fbwidget'); ?>">Facebook:
     <input class="widefat" id="<?php echo $this->get_field_id('fbwidget'); ?>" name="<?php echo $this->get_field_name('fbwidget'); ?>" type="text" value="<?php echo attribute_escape($fbwidget); ?>" />
   </label>
-  <em style="float:right; font-size:11px; padding-top:3px;">Ex: <a href="http://vijayakumar.com/facebook" target="_blank">http://vijayakumar.com/facebook</a></em></p>
+  <em style="float:right; font-size:11px; padding-top:3px;">Ex: <a href="http://vijayakumar.org/facebook" target="_blank">http://vijayakumar.org/facebook</a></em></p>
 <p style="padding-top:10px;"></p>
 <p>
   <label for="<?php echo $this->get_field_id('twitterwidget'); ?>">Twitter:
     <input class="widefat" id="<?php echo $this->get_field_id('twitterwidget'); ?>" name="<?php echo $this->get_field_name('twitterwidget'); ?>" type="text" value="<?php echo attribute_escape($twitterwidget); ?>" />
   </label>
-  <em style="float:right; font-size:11px; padding-top:3px;">Ex: <a href="http://vijayakumar.com/twitter" target="_blank">http://vijayakumar.com/twitter</a></em>
+  <em style="float:right; font-size:11px; padding-top:3px;">Ex: <a href="http://vijayakumar.org/twitter" target="_blank">http://vijayakumar.org/twitter</a></em>
 <p style="padding-top:10px;"></p>
 <p>
   <label for="<?php echo $this->get_field_id('flickrwidget'); ?>">Flickr:
     <input class="widefat" id="<?php echo $this->get_field_id('flickrwidget'); ?>" name="<?php echo $this->get_field_name('flickrwidget'); ?>" type="text" value="<?php echo attribute_escape($flickrwidget); ?>" />
   </label>
-  <em style="float:right; font-size:11px; padding-top:3px;">Ex: <a href="http://vijayakumar.com/flickr" target="_blank">http://vijayakumar.com/flickr</a></em>
+  <em style="float:right; font-size:11px; padding-top:3px;">Ex: <a href="http://vijayakumar.org/flickr" target="_blank">http://vijayakumar.org/flickr</a></em>
 <p style="padding-top:10px;"></p>
 <p>
   <label for="<?php echo $this->get_field_id('linkedinwidget'); ?>">Linkedin:
     <input class="widefat" id="<?php echo $this->get_field_id('linkedinwidget'); ?>" name="<?php echo $this->get_field_name('linkedinwidget'); ?>" type="text" value="<?php echo attribute_escape($linkedinwidget); ?>" />
   </label>
-  <em style="float:right; font-size:11px; padding-top:3px;">Ex: <a href="http://vijayakumar.com/linkedin" target="_blank">http://vijayakumar.com/linkedin</a></em>
+  <em style="float:right; font-size:11px; padding-top:3px;">Ex: <a href="http://vijayakumar.org/linkedin" target="_blank">http://vijayakumar.org/linkedin</a></em>
 <p style="padding-top:10px;"></p>
 <p>
   <label for="<?php echo $this->get_field_id('youtubewidget'); ?>">Youtube:
     <input class="widefat" id="<?php echo $this->get_field_id('youtubewidget'); ?>" name="<?php echo $this->get_field_name('youtubewidget'); ?>" type="text" value="<?php echo attribute_escape($youtubewidget); ?>" />
   </label>
-  <em style="float:right; font-size:11px; padding-top:3px;">Ex: <a href="http://vijayakumar.com/youtube" target="_blank">http://vijayakumar.com/youtube</a></em>
+  <em style="float:right; font-size:11px; padding-top:3px;">Ex: <a href="http://vijayakumar.org/youtube" target="_blank">http://vijayakumar.org/youtube</a></em>
   <?php
   }
  
