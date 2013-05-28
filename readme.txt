@@ -32,7 +32,7 @@ Do you have questions or issues with Follow us on widget? write to me (vijay [at
 == Changelog ==
 
 = 1.2 =
-* Added missed icons GOogle+, Linkedin, Pinterest
+* Added missed icons Google+, Linkedin, Pinterest
 * Changed JPG icons to PNG with transparent background
 * Arranged the icons inline
 * Introuduced CSS classes for future releases
