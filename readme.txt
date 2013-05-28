@@ -1,18 +1,17 @@
 === Follow us on widget ===
-Contributors: Vijaya Kumar S
+Contributors: Vijayakumar S
 Plugin Site: http://vijayakumar.org/
 Tags: Follow us widget, Follow us, Follow me
 Requires at least: 2.8
-Tested up to: 3.3.1
+Tested up to: 3.5.1
 Stable tag: 2.4.0
+License: GPLv2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+
+This plugin is the most efficient way to integrate the important social like buttons.
 
 == Description ==
-<br />
-[Author Site](http://www.vijayakumar.org)|
-[Plugin Home Page](http://vijayakumar.org/web-development/easy-follow-us-on-wordpress-widget-plugin/)
-<br />
-<br />
-This plugin is the most efficient way to integrate the important social like buttons like twitter, facebook like, google +1 (plus one), LinkedIn, stumbleupon and Pinterest in three different position and styles.
+This plugin is the most efficient way to integrate the important social like buttons like Twitter, Facebook, Flickr, Youtube, Google+, Linkedin, and Pinterest inline.
 
 * Automatically display the social share buttons in widgets.
 
@@ -25,10 +24,15 @@ Very easy to install, similar to rest of the plugins.
 3. Activate the plugin through the plugin window in the admin panel.<br />
 4. Configure the settings through Appearance->Widgets in the admin panel.
 
-== Screenshots ==
-You can Check Screen Shots on my website.<br />
-[Twitter Facebook Google Plusone Social Share](http://vijayakumar.org/web-development/easy-follow-us-on-wordpress-widget-plugin/)<br />
+== Frequently Asked Questions ==
+
+Do you have questions or issues with Follow us on widget? write to me (vijay [at] vijayakumar.org).
+
 
 == Changelog ==
 
-Yet to share
+= 1.2 =
+* Added missed icons GOogle+, Linkedin, Pinterest
+* Changed JPG icons to PNG with transparent background
+* Arranged the icons inline
+* Introuduced CSS classes for future releases
