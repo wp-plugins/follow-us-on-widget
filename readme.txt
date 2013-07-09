@@ -11,7 +11,7 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 This plugin is the most efficient way to integrate the important social like buttons.
 
 == Description ==
-This plugin is the most efficient way to integrate the important social like buttons like Twitter, Facebook, Flickr, Youtube, Google+, Linkedin, and Pinterest inline.
+This plugin is the most efficient way to integrate the important social like buttons like Twitter, Facebook, Flickr, Youtube, Google+, Linkedin, Pinterest and RSS inline.
 
 * Automatically display the social share buttons in widgets.
 
