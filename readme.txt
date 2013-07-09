@@ -31,6 +31,10 @@ Do you have questions or issues with Follow us on widget? write to me (vijay [at
 
 == Changelog ==
 
+= 1.3 =
+* Added RSS feed icon
+* Updated CSS class .wpFUP li
+
 = 1.2 =
 * Added missed icons Google+, Linkedin, Pinterest
 * Changed JPG icons to PNG with transparent background
