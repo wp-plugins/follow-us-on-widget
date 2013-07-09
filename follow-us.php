@@ -4,7 +4,7 @@ Plugin Name: Follow us on widget
 Plugin URI: http://vijayakumar.org/web-development/easy-follow-us-on-wordpress-widget-plugin/
 Description: Follow us on widget helps to share the Social Media buttons as widget
 Author: Vijayakumar S
-Version: 1.2
+Version: 1.3
 Author URI: http://vijayakumar.org/
 */ 
  
@@ -27,6 +27,7 @@ class FollowusonWidget extends WP_Widget
 	$youtubewidget = $instance['youtubewidget'];
 	$GooglePluswidget = $instance['GooglePluswidget'];
 	$Pinterestwidget = $instance['Pinterestwidget'];
+	$Rsswidget = $instance['Rsswidget'];
 ?>
 
 <p>
@@ -60,6 +61,9 @@ class FollowusonWidget extends WP_Widget
   <p> <label for="<?php echo $this->get_field_id('Pinterestwidget'); ?>">Pinterest URL:
     <input class="widefat" id="<?php echo $this->get_field_id('Pinterestwidget'); ?>" name="<?php echo $this->get_field_name('Pinterestwidget'); ?>" type="text" value="<?php echo attribute_escape($Pinterestwidget); ?>" />
   </label></p>
+   <p> <label for="<?php echo $this->get_field_id('Rsswidget'); ?>">Rss URL:
+    <input class="widefat" id="<?php echo $this->get_field_id('Rsswidget'); ?>" name="<?php echo $this->get_field_name('Rsswidget'); ?>" type="text" value="<?php echo attribute_escape($Rsswidget); ?>" />
+  </label></p>
   <small>Plugin by <a href="http://vijayakumar.org/" target="_blank">Vijayakumar S, Wordpress Developer</a></small>
   <?php
   }
@@ -75,6 +79,7 @@ class FollowusonWidget extends WP_Widget
 	$instance['youtubewidget'] = $new_instance['youtubewidget'];
 	$instance['GooglePluswidget'] = $new_instance['GooglePluswidget'];
 	$instance['Pinterestwidget'] = $new_instance['Pinterestwidget'];
+	$instance['Rsswidget'] = $new_instance['Rsswidget'];
     return $instance;
   }
  
@@ -94,7 +99,8 @@ class FollowusonWidget extends WP_Widget
 		if($instance['linkedinwidget'] != '') echo "<li><a href='$instance[linkedinwidget]' target='_blank'><img alt='Linkedin' src='".plugins_url()."/".$arraysplit[0]."/images/linkedin.png' /></a></li>";
 		if($instance['youtubewidget'] != '') echo "<li><a href='$instance[youtubewidget]' target='_blank'><img alt='Youtube' src='".plugins_url()."/".$arraysplit[0]."/images/youtube.png' /></a></li>";
 		if($instance['GooglePluswidget'] != '') echo "<li><a href='$instance[GooglePluswidget]' target='_blank'><img alt='Youtube' src='".plugins_url()."/".$arraysplit[0]."/images/google_plus.png' /></a></li>";
-		if($instance['Pinterestwidget'] != '') echo "<li><a href='$instance[Pinterestwidget]' target='_blank'><img alt='Youtube' src='".plugins_url()."/".$arraysplit[0]."/images/pinterest.png' /></a></li>";
+		if($instance['Pinterestwidget'] != '') echo "<li><a href='$instance[Pinterestwidget]' target='_blank'><img alt='Youtube' src='".plugins_url()."/".$arraysplit[0]."/images/pinterest.png' /></a></li>"; 
+		if($instance['Rsswidget'] != '') echo "<li><a href='$instance[Rsswidget]' target='_blank'><img alt='RSS' src='".plugins_url()."/".$arraysplit[0]."/images/rss.png' /></a></li>";
 		echo "</ul>";
 		echo $after_widget;
   }
