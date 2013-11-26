@@ -28,6 +28,7 @@ class FollowusonWidget extends WP_Widget
 	$GooglePluswidget = $instance['GooglePluswidget'];
 	$Pinterestwidget = $instance['Pinterestwidget'];
 	$Rsswidget = $instance['Rsswidget'];
+	$xingwidget = $instance['xingwidget'];
 ?>
 
 <p>
@@ -52,20 +53,33 @@ class FollowusonWidget extends WP_Widget
     <input class="widefat" id="<?php echo $this->get_field_id('linkedinwidget'); ?>" name="<?php echo $this->get_field_name('linkedinwidget'); ?>" type="text" value="<?php echo attribute_escape($linkedinwidget); ?>" />
   </label>
 <p>
-<p> <label for="<?php echo $this->get_field_id('youtubewidget'); ?>">Youtube URL:
+<p>
+  <label for="<?php echo $this->get_field_id('youtubewidget'); ?>">Youtube URL:
     <input class="widefat" id="<?php echo $this->get_field_id('youtubewidget'); ?>" name="<?php echo $this->get_field_name('youtubewidget'); ?>" type="text" value="<?php echo attribute_escape($youtubewidget); ?>" />
-  </label></p>
- <p> <label for="<?php echo $this->get_field_id('GooglePluswidget'); ?>">Google+ URL:
+  </label>
+</p>
+<p>
+  <label for="<?php echo $this->get_field_id('GooglePluswidget'); ?>">Google+ URL:
     <input class="widefat" id="<?php echo $this->get_field_id('GooglePluswidget'); ?>" name="<?php echo $this->get_field_name('GooglePluswidget'); ?>" type="text" value="<?php echo attribute_escape($GooglePluswidget); ?>" />
-  </label></p>
-  <p> <label for="<?php echo $this->get_field_id('Pinterestwidget'); ?>">Pinterest URL:
+  </label>
+</p>
+<p>
+  <label for="<?php echo $this->get_field_id('Pinterestwidget'); ?>">Pinterest URL:
     <input class="widefat" id="<?php echo $this->get_field_id('Pinterestwidget'); ?>" name="<?php echo $this->get_field_name('Pinterestwidget'); ?>" type="text" value="<?php echo attribute_escape($Pinterestwidget); ?>" />
-  </label></p>
-   <p> <label for="<?php echo $this->get_field_id('Rsswidget'); ?>">Rss URL:
+  </label>
+</p>
+<p>
+  <label for="<?php echo $this->get_field_id('Rsswidget'); ?>">Rss URL:
     <input class="widefat" id="<?php echo $this->get_field_id('Rsswidget'); ?>" name="<?php echo $this->get_field_name('Rsswidget'); ?>" type="text" value="<?php echo attribute_escape($Rsswidget); ?>" />
-  </label></p>
-  <small>Plugin by <a href="http://vijayakumar.org/" target="_blank">Vijayakumar S, Wordpress Developer</a></small>
-  <?php
+  </label>
+</p>
+<p>
+  <label for="<?php echo $this->get_field_id('xingwidget'); ?>">Xing URL:
+    <input class="widefat" id="<?php echo $this->get_field_id('xingwidget'); ?>" name="<?php echo $this->get_field_name('xingwidget'); ?>" type="text" value="<?php echo attribute_escape($xingwidget); ?>" />
+  </label>
+</p>
+<small>Plugin by <a href="http://vijayakumar.org/" target="_blank">Vijayakumar S, Wordpress Developer</a></small>
+<?php
   }
  
   function update($new_instance, $old_instance)
@@ -80,6 +94,7 @@ class FollowusonWidget extends WP_Widget
 	$instance['GooglePluswidget'] = $new_instance['GooglePluswidget'];
 	$instance['Pinterestwidget'] = $new_instance['Pinterestwidget'];
 	$instance['Rsswidget'] = $new_instance['Rsswidget'];
+	$instance['xingwidget'] = $new_instance['xingwidget'];
     return $instance;
   }
  
@@ -101,6 +116,7 @@ class FollowusonWidget extends WP_Widget
 		if($instance['GooglePluswidget'] != '') echo "<li><a href='$instance[GooglePluswidget]' target='_blank'><img alt='Youtube' src='".plugins_url()."/".$arraysplit[0]."/images/google_plus.png' /></a></li>";
 		if($instance['Pinterestwidget'] != '') echo "<li><a href='$instance[Pinterestwidget]' target='_blank'><img alt='Youtube' src='".plugins_url()."/".$arraysplit[0]."/images/pinterest.png' /></a></li>"; 
 		if($instance['Rsswidget'] != '') echo "<li><a href='$instance[Rsswidget]' target='_blank'><img alt='RSS' src='".plugins_url()."/".$arraysplit[0]."/images/rss.png' /></a></li>";
+		if($instance['xingwidget'] != '') echo "<li><a href='$instance[xingwidget]' target='_blank'><img alt='RSS' src='".plugins_url()."/".$arraysplit[0]."/images/xing.png' /></a></li>";
 		echo "</ul>";
 		echo $after_widget;
   }
